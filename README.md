@@ -1,7 +1,9 @@
 <p align="center">
   <img src="https://dummyimage.com/1200x250/0f172a/00c4ff&text=CredChain+-+Blockchain+Credential+Verification+System" />
 </p>
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/7ac5ed15-b175-4404-a8e0-7158f6506e45" />
+<img width="1887" height="871" alt="image" src="https://github.com/user-attachments/assets/68b816b6-9e27-432b-97f3-3c0bff762ff9" />
+<img width="1920" height="883" alt="Screenshot (527)" src="https://github.com/user-attachments/assets/5edf7c0d-9bdf-4841-8400-f23215c9d2ed" />
+
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/214b0173-4810-47dc-9d70-757e99cb2a30" />
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/e28d10a3-86db-4b9e-b8bc-906f87726fe3" />
 
