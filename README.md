@@ -1,3 +1,215 @@
+CredChain – Blockchain Credential Verification System
+
+CredChain is a decentralised document issuance and verification system built using Blockchain, Smart Contracts (Solidity), IPFS, and React.js.
+It provides a tamper-proof, transparent, and secure method for issuing and verifying academic or government documents.
+
+Why CredChain?
+
+Traditional document verification is slow, insecure, and prone to forgery.
+CredChain solves this by storing document hashes on blockchain and storing files on IPFS, ensuring:
+
+✔ No tampering
+✔ No centralised dependency
+✔ Instant verification
+✔ Trustless verification (no need to "trust" the issuer)
+
+Demo Screenshots
+/screenshots/home.png
+/screenshots/upload.png
+/screenshots/issued.png
+/screenshots/verify.png
+/screenshots/qr-verifier.png
+🎯 Key Features
+🔗 1. Blockchain-Based Document Issuance
+
+Documents are issued via a verified institution wallet.
+
+SHA-256 file hash stored permanently on the Ethereum blockchain.
+
+Immutable, cannot be changed or deleted.
+
+🧾 2. IPFS Storage (Pinata)
+
+Original document stored on IPFS.
+
+Only the CID is stored on-chain (lightweight & secure).
+
+Users can view/download via the IPFS gateway.
+
+✔️ 3. Instant Document Verification
+
+Verify using:
+
+Aadhaar/Unique ID
+
+Document Name
+
+File hash
+
+QR Code
+
+Returns: issuer, timestamp, IPFS CID, and authenticity status.
+
+🧪 4. QR Code Features
+
+Each issued document receives a unique QR code.
+
+Anyone can scan → instantly verify authenticity.
+
+🎨 5. Smooth UI/UX
+
+Built with React.js
+
+AOS animations
+
+Fully responsive layout
+
+🧠 How It Works
+1️⃣ Document Upload
+
+User uploads a PDF/image → file goes to Pinata → IPFS CID generated.
+
+2️⃣ File Hashing
+
+A SHA-256 hash of the document is created inside the browser.
+
+3️⃣ Blockchain Recording
+
+Smart contract stores:
+
+Aadhaar/Student ID
+
+Document Name
+
+IPFS CID
+
+File Hash
+
+Timestamp
+
+Issuer Wallet Address
+
+4️⃣ Verification
+
+When the verifier checks a document:
+
+Fetches the stored record
+
+Matches file hash & metadata
+
+Shows authentic/invalid status
+
+🏗️ Tech Stack
+Frontend
+
+React.js
+
+AOS (Animate on Scroll)
+
+QRCode.react
+
+Tailwind / CSS
+
+Blockchain
+
+Solidity
+
+Ethereum (Sepolia Testnet)
+
+Ethers.js
+
+MetaMask
+
+Storage
+
+IPFS
+
+Pinata Gateway
+
+📜 Smart Contract (Solidity)
+
+Main functions:
+
+function issueDocument(
+    string memory studentID,
+    string memory docName,
+    string memory ipfsCID,
+    string memory fileHash
+) public onlyOwner;
+
+function getDocuments(string memory studentID) 
+    public view returns (Document[] memory);
+
+function verifyDocument(
+    string memory studentID,
+    string memory fileHash
+) public view returns (bool, uint256);
+
+🛠️ Setup Instructions (Developer Guide)
+1. Clone Repository
+git clone https://github.com/your-username/credchain.git
+cd credchain
+
+2. Install Dependencies
+npm install
+
+3. Add Required API Keys
+
+Create a .env file:
+
+REACT_APP_PINATA_JWT=your_pinata_jwt
+REACT_APP_ALCHEMY_RPC=your_alchemy_rpc
+
+4. Run the App
+npm start
+
+🧑‍🤝‍🧑 Team – Project Contributors
+👨‍💻 Mohamad Ayub Ansari
+
+Frontend Developer | Smart Contract Engineer
+
+👨‍💻 Vikash Chaudhary
+
+Backend Developer | Blockchain Integration
+
+👨‍💻 Aman Raj
+
+UI/UX Designer | System Architecture
+
+🌍 Use Cases
+
+Universities issuing digital degrees
+
+Government documents & ID verification
+
+Organisations verifying certificates
+
+Background verification systems
+
+Online exam boards & results
+
+🏆 What Makes CredChain Unique?
+⭐ 1. Fully Decentralized
+
+No central server → no single point of failure.
+
+⭐ 2. Strong Anti-Forgery
+
+Hash mismatch = fake document detected instantly.
+
+⭐ 3. QR-Based Verification
+
+Offline verification becomes possible.
+
+⭐ 4. Publicly Verifiable
+
+Anyone can verify using a blockchain explorer.
+
+📄 License
+
+This project is licensed under the MIT License.
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -8,7 +220,7 @@ In the project directory, you can run:
 
 ### `npm start`
 
-Runs the app in the development mode.\
+Runs the app in development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 The page will reload when you make changes.\
