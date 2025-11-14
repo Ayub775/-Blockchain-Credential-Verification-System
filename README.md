@@ -1,3 +1,13 @@
+<p align="center">
+  <img src="https://dummyimage.com/1200x250/0f172a/00c4ff&text=CredChain+-+Blockchain+Credential+Verification+System" />
+</p>
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/7ac5ed15-b175-4404-a8e0-7158f6506e45" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/214b0173-4810-47dc-9d70-757e99cb2a30" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/e28d10a3-86db-4b9e-b8bc-906f87726fe3" />
+
+
+
+
 CredChain – Blockchain Credential Verification System
 
 CredChain is a decentralised document issuance and verification system built using Blockchain, Smart Contracts (Solidity), IPFS, and React.js.
@@ -145,11 +155,6 @@ function verifyDocument(
     string memory fileHash
 ) public view returns (bool, uint256);
 
-🛠️ Setup Instructions (Developer Guide)
-1. Clone Repository
-git clone https://github.com/your-username/credchain.git
-cd credchain
-
 2. Install Dependencies
 npm install
 
@@ -164,15 +169,15 @@ REACT_APP_ALCHEMY_RPC=your_alchemy_rpc
 npm start
 
 🧑‍🤝‍🧑 Team – Project Contributors
-👨‍💻 Mohamad Ayub Ansari
+👨‍💻** Mohamad Ayub Ansari**
 
 Frontend Developer | Smart Contract Engineer
 
-👨‍💻 Vikash Chaudhary
+👨‍💻** Vikash Chaudhary**
 
 Backend Developer | Blockchain Integration
 
-👨‍💻 Aman Raj
+👨‍💻 **Aman Raj**
 
 UI/UX Designer | System Architecture
 
