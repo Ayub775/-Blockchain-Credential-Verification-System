@@ -9,8 +9,9 @@
 <img width="523" height="642" alt="Screenshot 2025-11-03 223731" src="https://github.com/user-attachments/assets/fac50849-eb80-4b20-9614-e64d1043b91e" />
 
 
+Demo video
 
-
+<video src="src/assets/video1.mp4" width="320" height="240" controls></video>
 CredChain – Blockchain Credential Verification System
 
 CredChain is a decentralised document issuance and verification system built using Blockchain, Smart Contracts (Solidity), IPFS, and React.js.
